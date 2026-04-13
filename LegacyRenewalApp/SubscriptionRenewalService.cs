@@ -11,6 +11,8 @@ namespace LegacyRenewalApp
             string paymentMethod,
             bool includePremiumSupport,
             bool useLoyaltyPoints)
+        
+        // preconditions
         {
             if (customerId <= 0)
             {
@@ -50,6 +52,9 @@ namespace LegacyRenewalApp
             decimal discountAmount = 0m;
             string notes = string.Empty;
 
+            
+            //------------------mess
+            
             if (customer.Segment == "Silver")
             {
                 discountAmount += baseAmount * 0.05m;
@@ -70,6 +75,7 @@ namespace LegacyRenewalApp
                 discountAmount += baseAmount * 0.20m;
                 notes += "education discount; ";
             }
+            //------------------
 
             if (customer.YearsWithCompany >= 5)
             {
@@ -82,6 +88,8 @@ namespace LegacyRenewalApp
                 notes += "basic loyalty discount; ";
             }
 
+            //--------------------
+            
             if (seatCount >= 50)
             {
                 discountAmount += baseAmount * 0.12m;
@@ -97,6 +105,8 @@ namespace LegacyRenewalApp
                 discountAmount += baseAmount * 0.04m;
                 notes += "small team discount; ";
             }
+            
+            //-----------------------
 
             if (useLoyaltyPoints && customer.LoyaltyPoints > 0)
             {
@@ -104,7 +114,9 @@ namespace LegacyRenewalApp
                 discountAmount += pointsToUse;
                 notes += $"loyalty points used: {pointsToUse}; ";
             }
-
+            
+            //-------------------- 
+            
             decimal subtotalAfterDiscount = baseAmount - discountAmount;
             if (subtotalAfterDiscount < 300m)
             {
@@ -131,6 +143,7 @@ namespace LegacyRenewalApp
                 notes += "premium support included; ";
             }
 
+            //-----------------------------
             decimal paymentFee = 0m;
             if (normalizedPaymentMethod == "CARD")
             {
@@ -156,7 +169,8 @@ namespace LegacyRenewalApp
             {
                 throw new ArgumentException("Unsupported payment method");
             }
-
+            
+            //--------------------------
             decimal taxRate = 0.20m;
             if (customer.Country == "Poland")
             {
@@ -174,7 +188,8 @@ namespace LegacyRenewalApp
             {
                 taxRate = 0.25m;
             }
-
+            
+            //-------------------------
             decimal taxBase = subtotalAfterDiscount + supportFee + paymentFee;
             decimal taxAmount = taxBase * taxRate;
             decimal finalAmount = taxBase + taxAmount;
@@ -184,7 +199,8 @@ namespace LegacyRenewalApp
                 finalAmount = 500m;
                 notes += "minimum invoice amount applied; ";
             }
-
+            
+            //----------------------------
             var invoice = new RenewalInvoice
             {
                 InvoiceNumber = $"INV-{DateTime.UtcNow:yyyyMMdd}-{customerId}-{normalizedPlanCode}",
