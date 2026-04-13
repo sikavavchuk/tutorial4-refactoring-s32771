@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "WScQB8PQzQ0=",
+  "success": true,
+  "projectFilePath": "/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/LegacyRenewalAppConsumer.csproj",
+  "expectedPackageFiles": [
+    "/Users/viktoriiasavchuk/.nuget/packages/microsoft.netcore.app.ref/8.0.25/microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/viktoriiasavchuk/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.25/microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512",
+    "/Users/viktoriiasavchuk/.nuget/packages/microsoft.netcore.app.host.osx-arm64/8.0.25/microsoft.netcore.app.host.osx-arm64.8.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}
