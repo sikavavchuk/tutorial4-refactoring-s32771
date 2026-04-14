@@ -16,3 +16,12 @@
 /Users/pgago/Downloads/materiały_na_stronę/apbd/wykład_4/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.pdb
 /Users/pgago/Downloads/materiały_na_stronę/apbd/wykład_4/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.genruntimeconfig.cache
 /Users/pgago/Downloads/materiały_na_stronę/apbd/wykład_4/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/ref/LegacyRenewalAppConsumer.dll
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.csproj.AssemblyReference.cache
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.AssemblyInfoInputs.cache
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.AssemblyInfo.cs
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.csproj.CoreCompileInputs.cache
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.sourcelink.json
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.dll
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/refint/LegacyRenewalAppConsumer.dll
+/Users/viktoriiasavchuk/Downloads/zadanie_refactoring_renewal/LegacyRenewalAppConsumer/obj/Debug/net8.0/LegacyRenewalAppConsumer.pdb
